@@ -38,7 +38,7 @@ def predict_sentiment():
     print(review_text)
     pred_sentiment = sentiment_model.classify_sentiment(review_text)
     print(pred_sentiment)
-    return render_template("index.html", sentiment=pred_sentiment)
+    return render_template("index.html", sentiment=pred_sentiment, message1=review_text)
 
 
 if __name__ == '__main__':
